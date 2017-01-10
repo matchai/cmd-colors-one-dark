@@ -1,0 +1,47 @@
+Windows Registry Editor Version 5.00
+
+; Registry file that maps the solarized palette to the 16 avaliable colors
+; in a Windows command prompt. Note, hex values in the table are RGB but byte
+; ordering of a DWORD is BGR, e.g. "ColorTable<##>"=dword:00<B><G><R>
+;
+; Solarized color table from http://ethanschoonover.com/solarized.
+;
+; NR  cmd.exe      PowerShell   ONE DARK    HEX      DWORD
+; --  -------      -----------  ----------  -------  --------
+; 00  Black        Black        background  #282c34  00342c28;
+; 01  Blue         DarkBlue     blue        #61afef  00efaf61;
+; 02  Green        DarkGreen    green       #98c379  0079c398;
+; 03  Aqua         DarkCyan     cyan        #56b6c2  00c2b656;
+; 04  Red          DarkRed      red1        #e06c75  00756ce0;
+; 05  Purple       DarkMagenta  purple      #c678dd  00dd78c6;
+; 06  Yellow       DarkYellow   orange1     #d19a66  00669ad1;
+; 07  White        Gray         mono-1      #abb2bf  00bfb2ab;
+; 08  Gray         DarkGray     mono-2      #828997  00978982;
+; 09  LightBlue    Blue         blue        #61afef  00efaf61;
+; 10  LightGreen   Green        green       #98c379  0079c398;
+; 11  LightAqua    Cyan         cyan        #56b6c2  00c2b656;
+; 12  LightRed     Red          red2        #e5847b  007b84e5;
+; 13  LightPurple  Magenta      purple      #c678dd  00dd78c6;
+; 14  LightYellow  Yellow       orange2     #e5c07b  007bc0e5;
+; 15  BrightWhite  White        white       #ffffff  00ffffff;
+;
+
+[HKEY_CURRENT_USER\Console]
+"ColorTable00"=dword:00342c28
+"ColorTable01"=dword:00efaf61
+"ColorTable02"=dword:0079c398
+"ColorTable03"=dword:00c2b656
+"ColorTable04"=dword:00756ce0
+"ColorTable05"=dword:00dd78c6
+"ColorTable06"=dword:00669ad1
+"ColorTable07"=dword:00bfb2ab
+"ColorTable08"=dword:00978982
+"ColorTable09"=dword:00efaf61
+"ColorTable10"=dword:0079c398
+"ColorTable11"=dword:00c2b656
+"ColorTable12"=dword:007b84e5
+"ColorTable13"=dword:00dd78c6
+"ColorTable14"=dword:007bc0e5
+"ColorTable15"=dword:00ffffff
+"ScreenColors"=dword:00000007
+"PopupColors"=dword:000000f5
